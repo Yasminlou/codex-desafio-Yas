@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 16px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  

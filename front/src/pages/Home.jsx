@@ -3,6 +3,7 @@ import { fetchFeedPage } from '../api/feed';
 import ArticleCard from '../components/ArticleCard';
 import VideoCard from '../components/VideoCard';
 import GroupedArticles from '../components/GroupedArticles';
+import AdCard from '../components/AdCard';
 import insertAds from '../utils/insertAds';
 import '../styles/Home.css'
 
@@ -24,6 +25,8 @@ const Home = () => {
           return <ArticleCard key={index} item={item} />;
         case 'video':
           return <VideoCard key={index} item={item} />;
+        case 'ad':
+          return <AdCard key={`ad-${index}`} />;
         default:
           return null;
       }

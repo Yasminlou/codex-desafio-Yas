@@ -41,6 +41,13 @@ const Home = () => {
           })}
         </div>
   
+        <div className="sidebar">
+          {feed
+            .filter((item) => item.type === 'agrupador-materia')
+            .map((item, index) => (
+              <GroupedArticles key={index} item={item} />
+            ))}
+        </div>
       </main>
     );
   };

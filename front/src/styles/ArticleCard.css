@@ -1,0 +1,39 @@
+.article-card {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+  }
+  
+  .article-image {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .article-content {
+    flex: 1;
+  }
+  
+  .article-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #c4170c;
+    text-transform: uppercase;
+  }
+  
+  .article-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 0;
+  }
+  
+  .article-summary {
+    font-size: 14px;
+    color: #444;
+  }
+  

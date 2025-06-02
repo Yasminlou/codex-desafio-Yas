@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchFeedPage } from '../api/feed';
 import ArticleCard from '../components/ArticleCard';
+import VideoCard from '../components/VideoCard';
 import GroupedArticles from '../components/GroupedArticles';
 import insertAds from '../utils/insertAds';
 import '../styles/Home.css'
@@ -21,6 +22,8 @@ const Home = () => {
       switch (item.type) {
         case 'materia':
           return <ArticleCard key={index} item={item} />;
+        case 'video':
+          return <VideoCard key={index} item={item} />;
         default:
           return null;
       }
@@ -34,6 +37,7 @@ const Home = () => {
             return renderItem(item, index);
           })}
         </div>
+  
       </main>
     );
   };

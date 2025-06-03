@@ -1,34 +1,59 @@
 .g1-header {
-    background-color: #c4170c;
-    color: white;
-    padding: 12px 16px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .g1-header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .g1-logo {
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: lowercase;
-    margin: 0;
-  }
-  
-  .g1-nav a {
-    color: white;
-    margin-left: 16px;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: lowercase;
-  }
-  
-  .g1-nav a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #c4170c;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Topo com botão e logo */
+.g1-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.g1-logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin: 0;
+}
+
+/* Botão hamburguer à esquerda */
+.hamburger-button {
+  position: absolute;
+  left: 16px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Menu expandido (embaixo do header-content) */
+.g1-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c4170c;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.g1-mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 0;
+}
+
+.g1-mobile-menu a:hover {
+  text-decoration: underline;
+}

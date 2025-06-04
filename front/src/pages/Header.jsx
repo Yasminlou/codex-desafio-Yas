@@ -1,33 +1,35 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
-import { MdOutlineArticle, MdVideoLibrary, MdLiveTv } from 'react-icons/md';
+import { Menu, Home, Tv, Newspaper, Globe } from 'lucide-react';
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
 
   return (
-    <header className="g1-header">
-      <div className="g1-header-content">
-        <button
-          className="hamburger-button"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Abrir menu"
-        >
-          ☰
-        </button>
-        <h1 className="g1-logo">g1</h1>
+    <header className="header">
+      <div className="menu-icon" onClick={toggleMenu}>
+        <Menu size={28} color="#fff" />
       </div>
 
-      {menuOpen && (
-        <nav className="g1-mobile-menu">
-          <a href="/" title="Notícias">
-            <MdOutlineArticle size={24} />
+      <h1 className="logo">g1</h1>
+
+      {open && (
+        <nav className="dropdown-menu">
+          <a href="https://g1.globo.com" target="_blank" rel="noopener noreferrer">
+            <Home size={18} /> <span>Início</span>
           </a>
-          <a href="/" title="Vídeos">
-            <MdVideoLibrary size={24} />
+          <a href="https://g1.globo.com/tv-e-famosos/" target="_blank" rel="noopener noreferrer">
+            <Tv size={18} /> <span>TV e Famosos</span>
           </a>
-          <a href="/" title="Ao vivo">
-            <MdLiveTv size={24} />
+          <a href="https://g1.globo.com/politica/" target="_blank" rel="noopener noreferrer">
+            <Newspaper size={18} /> <span>Política</span>
+          </a>
+          <a href="https://g1.globo.com/mundo/" target="_blank" rel="noopener noreferrer">
+            <Globe size={18} /> <span>Mundo</span>
           </a>
         </nav>
       )}

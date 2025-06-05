@@ -2,7 +2,7 @@ export default function insertAds(feedItems) {
   const result = [];
   let contentCount = 0;
 
-  feedItems.forEach((item, index) => {
+  feedItems.forEach((item) => {
     result.push(item);
 
     // Só conta como conteúdo se não for agrupador

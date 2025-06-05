@@ -39,7 +39,8 @@ Este projeto é uma simulação da página inicial do portal G1, desenvolvida co
 
 ## 📁 Estrutura do projeto
 ```bash
-src/
+front/
+├──src/
 ├── api/
 │ └── feed.js
 ├── components/

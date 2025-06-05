@@ -11,9 +11,10 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="menu-icon" onClick={toggleMenu}>
-        <Menu size={28} color="#fff" />
-      </div>
+      <button className="menu-icon" onClick={toggleMenu} aria-label="Abrir menu">
+       <Menu size={28} color="#fff" />
+      </button>
+
 
       <h1 className="logo">g1</h1>
 

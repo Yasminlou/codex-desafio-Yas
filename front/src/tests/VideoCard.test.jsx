@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import VideoCard from './VideoCard';
+import VideoCard from '../components/VideoCard';
 import '@testing-library/jest-dom';
 
 

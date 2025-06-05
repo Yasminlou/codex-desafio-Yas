@@ -4,7 +4,7 @@ import '../styles/AdCard.css';
 const AdCard = () => {
     return (
       <div className="ad-card">
-        <span className="ad-label">Publicidade</span>
+        <span className="ad-label">Anúncio</span>
         <img
           src={`https://picsum.photos/600/150?random=${Math.floor(Math.random() * 1000)}`}
           alt="Anúncio"

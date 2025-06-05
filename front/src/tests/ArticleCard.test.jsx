@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import ArticleCard from './ArticleCard';
+import ArticleCard from '../components/ArticleCard';
 
 const mockItem = {
   chapeu: "Notícias",
